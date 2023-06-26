@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <div class="main-wrapper">
+        <header>
+            <h1>Tech-Blog</h1>
+            <nav class="navbar">
+                {{#if loggedIn}}
+                <a href="/" class="homepage">Homepage</a>
+                <a href="/dashboard" class="dashboard">Dashboard</a>
+                <a href="/dashboard/create/" class="create">Create Post</a>
+                <button id="logout" class="button">Logout</button>
+                {{else}}
+                <a href="/" class="homepage">Homepage</a>
+                <a href="/login" class="button">Login</a>
+                {{/if}}
+            </nav>
+        </header> 
+    </div>
+    <main>
+        {{{ body }}}
+    </main>
     
 </body>
 </html>
