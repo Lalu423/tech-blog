@@ -1,19 +1,32 @@
-<div class="dash-wrap">
-    <section>
-        <h1>Create Post</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
 
-        <form class="new-post">
-            <div>
-                <label>Title</label>
-                <input type="text" id="post-title" name="title"/>
-            </div>
+<body class="dash-wrapper">
+    <nav class="navbar">
+                    <ul>
+                        <li class="nav-link"><a href="/">Home</a></li>
+                        <li class="nav-link"><a href="/dashbaord">Dashboard</a></li>
+                        <li class="nav-link"><a href="#" id="logout-link">Logout</a></li>
+                    </ul>
+                </nav>
+    <header class="dash-head">
+        <h1 class="app-title"><a href="/dashboard">Welcome to your dashboard!</a></h1>
+    </header>
+    <main class="dash-body">
+        {{{ body }}}
+    </main>
+    <div class="new-post">
+        <section>
+            <a href="/dashboard">New Post</a>
+        </section>
+    </div>
 
-            <div>
-                <label for="post">Body</label>
-                <textarea id="post" name="po"
-            </div>
+</body>
 
-
-        </form>
-    </section>
-</div>
+<script src="/js/logout"></script>

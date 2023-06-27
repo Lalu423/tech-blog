@@ -11,21 +11,20 @@
             <header>
                 <h1>Tech-Blog</h1>
                 <nav class="navbar">
-                    {{#if loggedIn}}
-                    <a href="/" class="homepage">Homepage</a>
-                    <a href="/dashboard" class="dashboard">Dashboard</a>
-                    <a href="/dashboard/create/" class="create">Create Post</a>
-                    <button id="logout" class="button">Logout</button>
-                    {{else}}
-                    <a href="/" class="homepage">Homepage</a>
-                    <a href="/login" class="button">Login</a>
-                    {{/if}}
+                    <ul>
+                        <li class="nav-link"><a href="/">Home</a></li>
+                        <li class="nav-link"><a href="/dashbaord">Dashboard</a></li>
+                        <li class="nav-link"><a href="/login">Login</a></li>
+                        <li class="nav-link"><a href="#" id="logout-link">Logout</a></li>
+                    </ul>
                 </nav>
+                <h1 class="app-title"><a href="/">Tech-Blog</a></h1>
             </header> 
     
         <main>
             {{{ body }}}
         </main>
+        
         <footer>Thank you!</footer>
     </div>
 
