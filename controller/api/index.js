@@ -8,6 +8,6 @@ const commentRoutes = requires('./commentRoutes');
 
 router.use('/user', userRoutes);
 router.use('/post', postRoutes);
-router.use('/comment', CommentRoutes);
+router.use('/comment', commentRoutes);
 
 module.exports = router;
